@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>D3 Bug in Safari 8, or Safari 8 Bug demonstrated with D3</title>
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/d3/d3.js" charset="utf-8"></script>
 <script>
+    var title = "D3 Bug in Safari 8, or Safari 8 Bug demonstrated with D3";
+    $(document).prop('title', title);
     $(function() {
         InitChart();
     });
     function InitChart() {
         var graph = d3.select("#bubblechart");
         graph.append("text")
-            .attr("x", 250) .attr("y", 35)
-            .style("text-anchor", "middle") .style("font-weight", "bold") .style("font-size", "18px")
-            .text(graph_title);
+            .html(title);
+            .style("font-weight", "bold")
+            .style("font-size", "24px")
     }
 </script>
 </head>
