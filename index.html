@@ -4,7 +4,7 @@
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/d3/d3.js" charset="utf-8"></script>
 <script>
-    var title = "D3 Bug in Safari 8, or Safari 8 Bug demonstrated with D3";
+    var title = "D3 Bug in Safari 8, &amp; or Safari 8 Bug demonstrated with D3";
     $(document).prop('title', title);
     $(function() {
         InitChart();
@@ -13,8 +13,6 @@
         var graph = d3.select("#bubblechart");
         graph.append("text")
             .html(title);
-            .style("font-weight", "bold")
-            .style("font-size", "24px")
     }
 </script>
 </head>
